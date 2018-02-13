@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+	<script src="components/loader.js"></script>
+	<script src="lib/onsenui/js/onsenui.min.js"></script>
+
+	<link rel="stylesheet" href="components/loader.css">
+	<link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+	<link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script>
+		ons.ready(function() {
+			console.log("Onsen UI is ready!");
+		});
+	</script>
+</head>
+<body>
+	<ons-page>
+		<ons-tabbar>
+			<ons-tab page="home.html" label="Home" icon="ion-home" active="true"></ons-tab>
+			<ons-tab page="comments.html" label="Comments" icon="ion-chatbox-working"></ons-tab>
+			<ons-tab page="tags.html" label="Tags" icon="ion-ios-pricetag"></ons-tab>
+			<ons-tab page="settings.html" label="Settings" icon="ion-ios-cog"></ons-tab>
+		</ons-tabbar>
+	</ons-page>
+
+	<ons-template id="home.html">
+		<ons-toolbar>
+			<div class="center">Home</div>
+		</ons-toolbar>
+		<p style="padding-top: 100px; color: #999; text-align: center">Page Contents</p>
+	</ons-template>
+
+	<ons-template id="comments.html">
+		<ons-toolbar>
+			<div class="center">Comments</div>
+		</ons-toolbar>
+		<p style="padding-top: 100px; color: #999; text-align: center">Page Contents</p>
+	</ons-template>
+
+	<ons-template id="tags.html">
+		<ons-toolbar>
+			<div class="center">Tags</div>
+		</ons-toolbar>
+		<p style="padding-top: 100px; color: #999; text-align: center">Page Contents</p>
+	</ons-template>
+
+	<ons-template id="feed.html">
+		<ons-toolbar>
+			<div class="center">Feed</div>
+		</ons-toolbar>
+		<p style="padding-top: 100px; color: #999; text-align: center">Page Contents</p>
+	</ons-template>
+
+	<ons-template id="settings.html">
+		<ons-toolbar>
+			<div class="center">Settings</div>
+		</ons-toolbar>
+		<p style="padding-top: 100px; color: #999; text-align: center">Page Contents</p>
+	</ons-template>
+
+</body>
+</html>
